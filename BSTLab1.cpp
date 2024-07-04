@@ -4,16 +4,23 @@ using namespace std;
 
 // Implement the node class we will need for our Binary Search Tree
 class Node {
-	public:
-		// the Node should contain
-		// 	- an integer "key" that holds the value of the Node
-		// 	- a pointer to each child possible child node ("right" and "left")
+  public:
+    // the Node should contain
+    // 	- an integer "key" that holds the value of the Node
+    // 	- a pointer to each child possible child node ("right" and "left")
+  int key;
+  Node *right,*left;
 
 
-		// Write a constructor for the Node
-		// input: only an integer value for "key", no pointer arguments
-		// 		right and left pointers should be null
-
+  // Write a constructor for the Node
+  // input: only an integer value for "key", no pointer arguments
+  // 		right and left pointers should be null
+  Node(int inD)
+  {
+    key = inD;
+    left = nullptr;
+    right = nullptr;
+  }
 };
 
 
